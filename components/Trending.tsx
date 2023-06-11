@@ -5,7 +5,7 @@ import axios from "axios"
 
 export default function Trending() {
 
-    const [trending, setTrending] = useState ([])
+    const [trending, setTrending] = useState ([] as any [])
         useEffect (() => {
         axios.get (`${process.env.NEXT_PUBLIC_BASE_URL}/trending/movie/week`, {
             headers: {

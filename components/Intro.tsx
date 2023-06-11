@@ -5,7 +5,7 @@ import cinema from "../public/cinema.jpg"
 import axios from "axios"
 
 export default function Intro() {
-    const [movies, setMovies] = useState([])
+    const [movies, setMovies] = useState([] as any [])
     useEffect(() => {
         const options = {
             method: "GET",
