@@ -1,4 +1,5 @@
 import Link from "next/link"
+
 import { RiMovie2Fill, RiSearchLine, RiMicFill, RiMenuFill, RiMoonClearFill } from "react-icons/Ri"
 
 export default function Navbar() {
