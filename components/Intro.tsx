@@ -9,7 +9,7 @@ export default function Intro() {
     useEffect(() => {
         const options = {
             method: "GET",
-            url: `${process.env.NEXT_PUBLIC_BASE_URL}/discover/movie`,
+            url: `${process.env.NEXT_PUBLIC_BASE_URL}/movie/popular`,
             headers: {
                 accept: "application/json",
                 Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}` // JIKA SYNTAX API TOKEN INI TIDAK MENGGUNAKAN "NEXT_PUBLIC" MAKA MUNCUL ERROR 401
