@@ -8,10 +8,8 @@ export default function Home() {
         <main>
             <div className="w-full overflow-hidden">
                 <div className="flex flex-col items-center justify-center">
-                    <Navbar />
                     <Intro />
                     <Trending />
-                    <Footer />
                 </div>
             </div>
         </main>
