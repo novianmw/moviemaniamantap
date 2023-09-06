@@ -24,8 +24,8 @@ export default function Intro() {
     return (
         <section className="w-full flex flex-col items-start">
             <div id="container" className="w-full flex flex-col justify-center items-center p-6 mx-auto max-w-[1280px]" >
-                <div id="intro-image" className="flex flex-col justify-center items-center h-[75vh] p-6 gap-10">
-                    <h1 className=" font-semibold text-[32px]">Watch it, Feel it, and Enjoy your cinema</h1>
+                <div id="intro-image" className="w-full flex flex-col justify-center items-center h-[75vh] p-6 gap-10">
+                    <h1 className=" font-semibold text-center text-[32px]">Watch it, Feel it, and Enjoy your cinema</h1>
                     <div className="flex justify-center items-center">
                         <form method="get" action="/search">
                             <label htmlFor="search" className="sr-only">
@@ -36,9 +36,9 @@ export default function Intro() {
                                     <RiSearchLine className="w-5 h-5" />
                                 </div>
                                 <input
-                                    type="text"
+                                    type="search"
                                     placeholder="Search for movies, shows, and other. . ."
-                                    className="flex border border-black rounded-lg bg-[#188C8D]/10 py-1 md:py-2 pl-10 pr-5 w-full md:w-[500px] shadow-sm"
+                                    className="flex border border-black rounded-lg bg-[#188C8D]/10 py-2 pl-10 pr-5 shadow-sm w-full min-w-[300px] md:w-[400px]"
                                 />
                                 <div className="absolute inset-y-0 right-0 px-3 flex items-center">
                                     <RiMicFill className="w-5 h-5" />
@@ -48,7 +48,7 @@ export default function Intro() {
                     </div>
                 </div>
                 <div id="movie-container" className="w-full flex flex-wrap justify-center items-center gap-5 p-5">
-                    {trendings.map((trending, index) => (
+                    {trendings.slice(0,8).map((trending, index) => (
                         <div key={index} id="movie-wrapper" className="flex flex-col items-center justify-center border-2 border-[#1c2024] p-2">
                             <div id="movie-image" className="flex items-center justify-center">
                                 <Image
