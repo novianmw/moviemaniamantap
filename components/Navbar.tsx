@@ -64,33 +64,38 @@ export default function Navbar() {
                     </button>
                 </div>
             </div>
-            <div className={`${toggle ? 'hidden' : 'flex lg:hidden'} w-full flex-row justify-center items-center gap-2`}>
+            <div className={`${toggle ? 'hidden' : 'flex lg:hidden'} w-full flex-row justify-between items-center gap-0 md:gap-2 px-6`}>
                 <Link
-                    className="text-[12px] py-2 px-4 duration-300 rounded-lg border-none hover:border-b hover:border-r hover:border-black hover:bg-[#188C8D] hover:text-white hover:rounded-lg hover:shadow-lg"
+                    className="text-[12px] p-2 md:py-2 md:px-4 duration-300 rounded-lg border-none hover:border-b hover:border-r hover:border-black hover:bg-[#188C8D] hover:text-white hover:rounded-lg hover:shadow-lg"
                     href="/">
                     Home
                 </Link>
                 <Link
-                    className="text-[12px] py-2 px-4 duration-300 rounded-lg border-none hover:border-b hover:border-r hover:border-black hover:bg-[#188C8D] hover:text-white hover:rounded-lg hover:shadow-lg"
+                    className="text-[12px]  duration-300 rounded-lg border-none hover:border-b hover:border-r hover:border-black hover:bg-[#188C8D] hover:text-white hover:rounded-lg hover:shadow-lg"
                     href="/movies">
                     Movies
                 </Link>
                 <Link
-                    className="text-[12px] py-2 px-4 duration-300 rounded-lg border-none hover:border-b hover:border-r hover:border-black hover:bg-[#188C8D] hover:text-white hover:rounded-lg hover:shadow-lg"
+                    className="text-[12px]  duration-300 rounded-lg border-none hover:border-b hover:border-r hover:border-black hover:bg-[#188C8D] hover:text-white hover:rounded-lg hover:shadow-lg"
                     href="/tvshows">
                     TV Shows
                 </Link>
                 <Link
-                    className="text-[12px] py-2 px-4 duration-300 rounded-lg border-none hover:border-b hover:border-r hover:border-black hover:bg-[#188C8D] hover:text-white hover:rounded-lg hover:shadow-lg"
-                    href="/explore">
-                    Explore
+                    className="text-[12px]  duration-300 rounded-lg border-none hover:border-b hover:border-r hover:border-black hover:bg-[#188C8D] hover:text-white hover:rounded-lg hover:shadow-lg"
+                    href="/search">
+                    Search
                 </Link>
-                {/* <button className="border text-[14px] border-black py-2 px-4 rounded-lg shadow-lg duration-300 hover:text-white hover:bg-[#E9652A]">
-                        Login
-                    </button>
-                    <button className="border text-[14px] border-black py-2 px-4 rounded-lg shadow-lg duration-300 hover:text-white hover:bg-[#E9652A]">
-                        Sign Up
-                    </button> */}
+                <Link
+                    className="text-[12px]  duration-300 rounded-lg border-none hover:border-b hover:border-r hover:border-black hover:bg-[#E9652A] hover:text-white hover:rounded-lg hover:shadow-lg"
+                    href="/">
+                    Login
+                </Link>
+                <Link
+                    className="text-[12px]  duration-300 rounded-lg border-none hover:border-b hover:border-r hover:border-black hover:bg-[#E9652A] hover:text-white hover:rounded-lg hover:shadow-lg"
+                    href="/">
+                    Sign Up
+                </Link>
+
             </div>
         </header>
     )
